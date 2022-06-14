@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Диплом</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+  			<div class="container-fluid">
+    			<a class="navbar-brand">Diplom</a>
+    			<form class="d-flex" role="search">
+      				<input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+      				<button class="btn btn-outline-success" type="submit">Поиск</button>
+    			</form>
+  			</div>
+		</nav>
+	</header>
+	<div class="top">
+		<h1>Красная книга</h1>
+		<p>Российской Федерации</p>
+	</div>
+	<div class="row">
+    	<div class="col-6">
+    		<button class="button" type="button">
+    			<a href="index(2).html">
+    			<div class="container-animals">Животные
+    				<div class="animals">
+    					<img src="images/animals-image.png" alt="">
+    				</div>
+    			</div>
+    			</a>
+    		</button>
+    	</div>
+    	<div class="col-6">
+    		<button class="button" type="button">
+    			<a href="index(3).html">
+    			<div class="container-plants">Растения
+    				<div class="plants">
+    					<img src="images/plants-image.png" alt="">
+    				</div>
+    			</div>
+    			</a>
+        	</button>
+    	</div>
+  	</div>
+</body>
+<footer class="footer">
+  <div class="row">
+    <div class="col-2">Ссылки
+		<a href="https://kipmu.ru/rasteniya-krasnoj-knigi/">переход</a>
+    </div>
+    <div class="col-10">Информация
+    	<div>
+    		<a href="#">Главная</a>
+    	</div>
+    </div>
+  </div>
+</footer>
+</html>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		function functionName(id) {
+			$('html, body').animate({
+				scrollTop: $(id).offset().top
+			}, 500);
+		}
+
+		$(document).on("scroll", function () {
+			if($(window).scrollTop() === 0)
+				$("header").removeClass("fixed");
+			else
+				$("header").attr("class", "fixed");
+		});
+	</script>
+</body>
+</html>
+

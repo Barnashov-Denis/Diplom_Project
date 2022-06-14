@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Диплом</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand">Diplom</a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Поиск</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Лотос Орехоносный</h2>
+        <div class="pl1">
+            <img src="images/lotos.png" alt="">
+        </div>
+        <div class="text">
+            <p>
+           Немногочисленный вид лотосов, который можно встретить возле Амура, в Приморском краю, в районах Азовского и Каспийского морей. Является водным растением, своими корнями врастает в ил, а листья поднимаются над жидкостью. Лотос орехоносный цветет в период с июля по август. Цветок имеет ореховый окрас, его размер доходит до 25 см. Популяция растения постепенно сокращается из-за сильных речных паводков. Также человек не против сорвать цветок, причем тот увядает спустя лишь несколько часов.
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Лилия Саранка</h2>
+        <div class="pl2">
+            <img src="images/liliya.png" alt="">
+        </div>
+        <div class="text">
+            <p>
+           Растет лилия саранка в Сибири и Южной Европе. В качестве территорий выбирает широколиственные леса и опушки. В высоту растение способно вытягиваться до 80 см. Его цветок окрашен в ярко-фиолетовый цвет, могут присутствовать красные пятна. Стебель имеет зелено-красный окрас. Период цветения выпадает на июль, от бутонов исходит приятный аромат. Сейчас лилия саранка находится на грани исчезновения, поскольку ее численность снижается из-за вырубки лесов, сбора человеком и выгула скота на местности.
+            </p>
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <h2>Пион Тонколистный</h2>
+        <div class="pl3">
+            <img src="images/pion.png" alt="">
+        </div>
+        <div class="text">
+            <p>
+           Пион тонколистный растет на территории европейской части России, встречается в степях, горах, на полянах. В высоту стебель вытягивается до полуметра. Листья тонкие, по форме напоминают перья. Цвести пион начинает в мае, окрас бутона варьируется от розового до темно-красного, его диаметр доходит до 8 см. Пион тонколистный устойчив к сухому климату и морозам, ему требуется много света. Популяция растения постепенно сокращается в связи с освоением степей. Также пион часто становится пищей для скота. Сейчас люди стараются сохранить этот вид.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2>Фиалка Надрезанная</h2>
+        <div class="pl4">
+            <img src="images/fialka.png" alt="">
+        </div>
+        <div class="text">
+            <p>
+           Встретить этот вид растения можно в Сибири, Хакасии и на Востоке. В высоту фиалка надрезанная вытягивается до 10 см. У нее нет стебля, из корня сразу растут цветки и листья. Окрас у бутонов фиолетового цвета, их размер не превышает полтора сантиметра. Лучше всего растение ощущает себя на речных берегах, где много песка и гальки. Цветение начинается в период с июня по август, в зависимости от окружающих условий. Популяция фиалки постепенно снижается из-за того, что растению тяжело прорастать, также на его численность влияет выпас скота на этих территориях.
+            </p>
+        </div>
+    </div>
+
+</body>
+<footer class="footer">
+    <div class="container">
+  <div class="row">
+    <div class="col-2">Ссылки</div>
+    <div class="col-10">Информация
+        <div>
+            <a href="#">Главная</a>
+        </div>
+    </div>
+  </div>
+</footer>
+</html>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function functionName(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function () {
+            if($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+    </script>
+</body>
+</html>
+
